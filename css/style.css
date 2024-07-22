@@ -51,7 +51,22 @@ ul li.checked::before {
 
 #list li{
 	margin: auto;
-	padding-left: 45px;
+	/* padding-left: 45px; */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+#list li.active {
+  background-color: #30302f;
+  color: white;
+  transform: scale(); /* Küçük bir ölçekleme efekti */
+}
+
+.check-icon {
+  display: none;
+}
+/* SVG aktif olduğunda görünür hale gelir */
+.active .check-icon {
+  display: inline-block;
 }
 
 .close {
