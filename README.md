@@ -2,3 +2,4 @@
 Bu bir **Instagram Ana Sayfası Klonu'dur**. Ana sayfasına benzetilmeye çalışılmıştır. ** HTML, CSS ve Bootstrap kullanılmıştır. ** 
 > **Note:** **Responsive** özellikleri eklenmemiştir. (Mobil, tablet vs. cihaz görünümleri için)
 ##
+![Ana Sayfa - Home Page](readme_img/main.png)
