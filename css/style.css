@@ -49,6 +49,11 @@ ul li.checked::before {
   width: 7px;
 }
 
+#list li{
+	margin: auto;
+	padding-left: 45px;
+}
+
 .close {
   position: absolute;
   right: 0;

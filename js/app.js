@@ -1,6 +1,8 @@
 const taskInput = document.querySelector("#task");
 const list = document.querySelector("#list");
-const liveToastBtn = document.querySelectorAll("#liveToastBtn");
+const liveToastBtn = document.querySelector("#liveToastBtn");
+const liveToastSuccess = document.querySelector("#liveToastSuccess");
+const liveToastError = document.querySelector("#liveToastError");
 
 // Ekle butonuna ait newElement() onclick ile tuşa tıkladıktan sonra listeye ekleme
 function newElement() {
@@ -9,9 +11,10 @@ function newElement() {
 
     if (taskValue !== "") {
         list.innerHTML += `<li>${taskValue}</li>`;
-        taskInput.value = ""; 
+        taskInput.value = "";
+        showToast(liveToastSuccess);
     } else {
-        alert("Boş eklenemez");
+        showToast(liveToastError);     
     }
 }
 
@@ -22,3 +25,8 @@ taskInput.addEventListener("keypress", function(event) {
       newElement();
     }
 }) 
+
+// Show to toast
+function showToast(toastElement) {
+    $(toastElement).toast('show');
+}
